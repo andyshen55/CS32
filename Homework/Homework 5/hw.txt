@@ -1,0 +1,94 @@
+1a)
+		50
+	20		60
+ 10	       40		70
+      15     30	    	    65	    80
+   	   25  38	          72
+
+
+50
+	20
+		10
+			xx
+			15
+		40
+			30
+				25
+				38
+			xx
+	60
+		xx
+		70
+			65
+			80
+				72
+				xx
+
+1b)  
+in-order traversal: 10, 15, 20, 25, 30, 38, 40, 50, 60, 65, 70, 72, 80
+pre-order traversal: 50, 20, 10, 15, 40, 30, 25, 38, 60, 70, 65, 80, 72
+post-order traversal: 15, 10, 25, 38, 30, 40, 20, 65, 72, 80, 70, 60, 50
+
+1c)
+				50
+		15				60
+10				40				70
+			38				65		80
+		    25						    72
+
+
+50
+	15
+		10	
+		40
+			38
+				25
+				xx
+			xx
+	60
+		xx
+		70
+			65
+			80
+				72
+				xx
+
+2a)
+struct BTNode
+{
+	int m_value;
+	BTNode* m_parent, *m_left, *m_right;
+};
+
+2b)
+check if tree is empty (parent ptr is null and no children)
+	if so, create new BTNode pointed to by root and set its parent pointer to point to root
+
+start at the root of the tree (check if parent is null)
+while search is unfinished 
+check if value to be inserted is equal to current BTNode's value.
+	if so, either add it (assuming duplicates are okay) or return.
+if valye to be inserted < current nodes value
+	if left child is null, add new node and set is value to value, set new nodes parent ptr to current node
+	otherwise go left
+if value to be inserted > current nodes value
+	if right child is null, add new node and set is value to value, set new nodes parent ptr to current node
+	otherwise go right
+
+3a)					
+			7
+	3				6
+0		2		4			
+
+3b) int arrHeap[] = {7,3,6,0,2,4}
+
+3c) {6, 3, 4, 0, 2}
+
+4a) O(C + S)
+4b) O(logC + S)
+4c) O(logC + logS)
+4d) O(1 + logS) = O(logS)
+4e) O(1 + 1) = O(1)
+4f) O(logC + S)
+4g) O(1 + SlogS + S) = O(SlogS)
+4h) O(ClogS)
