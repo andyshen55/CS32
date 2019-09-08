@@ -1,7 +1,7 @@
-# CS32: 
-Winter 2019 CS32, Profs. David Smallberg | Carey Nachenberg
+# CS32: Introduction to Computer Science II
+### Winter 2019 CS32, Profs. David Smallberg | Carey Nachenberg
 
-Grade Received: A
+#### Grade Received: A
 
 These are my solutions to the prescribed HW/Projects for CS32. The purpose of this repository is to display/backup my work. Please do not try to copy or re-use any of my code.
 
